@@ -45,3 +45,8 @@ files = ["src/legalrag"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "-q"
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.6.2",
+]
