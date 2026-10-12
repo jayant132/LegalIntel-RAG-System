@@ -13,6 +13,22 @@ class DocStatus(str, Enum):
     INFORMAL = "informal"
 
 
+class DocType(str, Enum):
+    """Kinds of document in the corpus. Unknown values fail loudly at load time."""
+
+    CONTRACT = "contract"
+    AMENDMENT = "amendment"
+    EMPLOYMENT = "employment"
+    POLICY = "policy"
+    BOARD_MINUTES = "board_minutes"
+    LEGAL_MEMO = "legal_memo"
+    REPORT = "report"
+    REGISTER = "register"
+    EMAIL = "email"
+    CHAT = "chat"
+    NOTES = "notes"
+
+
 class AuthorityTier(int, Enum):
     """How much a source may be trusted when sources conflict (higher wins)."""
 
@@ -29,3 +45,18 @@ class ExpectedBehavior(str, Enum):
     ABSTAIN_NOT_IN_CORPUS = "abstain_not_in_corpus"
     REFUSE_ACCESS_DENIED = "refuse_access_denied"
     ANSWER_STATING_ABSENCE = "answer_stating_absence"
+
+
+DOC_TYPE_AUTHORITY: dict[DocType, AuthorityTier] = {
+    DocType.CONTRACT: AuthorityTier.BINDING,
+    DocType.AMENDMENT: AuthorityTier.BINDING,
+    DocType.EMPLOYMENT: AuthorityTier.BINDING,
+    DocType.POLICY: AuthorityTier.POLICY,
+    DocType.BOARD_MINUTES: AuthorityTier.RECORD,
+    DocType.LEGAL_MEMO: AuthorityTier.RECORD,
+    DocType.REPORT: AuthorityTier.RECORD,
+    DocType.REGISTER: AuthorityTier.RECORD,
+    DocType.EMAIL: AuthorityTier.INFORMAL,
+    DocType.CHAT: AuthorityTier.INFORMAL,
+    DocType.NOTES: AuthorityTier.INFORMAL,
+}
