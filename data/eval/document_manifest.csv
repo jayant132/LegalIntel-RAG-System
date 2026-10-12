@@ -1,0 +1,18 @@
+doc_id,path,doc_type,entity,owner_dept,confidentiality,acl_groups,effective_date,version,status,language,format
+D01,contracts/MSA_Veridian_Nordhaven_2022_signed.pdf,contract,Veridian Global Industries plc,Legal,confidential,legal;procurement;finance,2022-03-14,original,"active (as amended by D04, D05)",en,pdf
+D02,contracts/DPA_Veridian_Nordhaven_2022.pdf,contract,Veridian Global Industries plc,Legal,confidential,legal;procurement;it-security,2022-03-14,original,active,en,pdf
+D03,contracts/NDA_VeridianMfg_KestrelLabs_2023.pdf,contract,Veridian Manufacturing GmbH,Legal,confidential,legal;rnd;procurement,2023-02-05,original,active,en,pdf
+D04,amendments/MSA_Amendment_01_2023-06-20.docx,amendment,Veridian Global Industries plc,Legal,confidential,legal;procurement;finance,2023-07-01,A1,partially superseded by D05,en,docx
+D05,amendments/MSA_Amendment_02_Extension_2024-09-09.docx,amendment,Veridian Global Industries plc,Legal,confidential,legal;procurement;finance,2024-10-01,A2,active (latest),en,docx
+D06,hr/Executive_Employment_Agreement_ARao_2021_with_Variation_2023.docx,employment,Veridian Global Industries plc,HR,restricted,hr;legal,2021-09-01,v1+variation,active,en,docx
+D07,legal_internal/Board_Minutes_2024-12-10.docx,board_minutes,Veridian Global Industries plc,Company Secretary,restricted,exec;legal,2024-12-10,unsigned draft until 2025-02-25,active,en,docx
+D08,policies/Anti_Bribery_Corruption_Policy_v4.0_2024.docx,policy,Group,Compliance,internal,all-employees,2024-01-01,4.0,active,en,docx
+D09,policies/Anti_Bribery_Corruption_Policy_v3.1_2021.txt,policy,Group,Compliance,internal,all-employees,2021-01-01,3.1,superseded,en,txt
+D10,policies/Records_Retention_Policy_intranet.html,policy,Group,Legal,internal,all-employees,2023-02-14,n/a,active,en,html
+D11,correspondence/Email_thread_Nordhaven_Nov12_outage_credits.txt,email,Veridian Global Industries plc,Procurement,confidential,legal;procurement,2024-12-03,n/a,informal - non-contractual,en,txt
+D12,correspondence/Slack_export_legal-ops-nordhaven_2024-12.txt,chat,Veridian Global Industries plc,Legal,confidential,legal,2024-12-05,n/a,informal - non-authoritative,en,txt
+D13,correspondence/Meeting_notes_Nordhaven_call_2024-11-28.txt,notes,Veridian Global Industries plc,Procurement,confidential,legal;procurement,2024-11-28,n/a,informal - non-authoritative,en,txt
+D14,legal_internal/Legal_Memo_Nordhaven_CSF_2024-12-03_PRIVILEGED.pdf,legal_memo,Veridian Global Industries plc,Legal,privileged,legal,2024-12-03,n/a,active,en,pdf
+D15,registers/Nordhaven_SLA_Report_2024.xlsx,report,Veridian Global Industries plc,Procurement,confidential,legal;procurement;it-security,2024-12-03,preliminary Nov,active,en,xlsx
+D16,registers/Contract_Register_2024.xlsx,register,Group,Legal,confidential,legal;procurement;finance,2024-03-11,last row update varies,partially stale,en,xlsx
+D17,scanned/Scanned_Lease_Frankfurt_Site_2020.pdf,contract,Veridian Manufacturing GmbH,Real Estate,confidential,legal;real-estate;finance,2021-01-01,original,active,en,"pdf (image only, needs OCR)"

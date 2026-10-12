@@ -1,0 +1,19 @@
+#legal-ops-nordhaven  (exported 2024-12-05)
+
+[2024-12-03 17:02] marcus.hale: guys lise just sent the goodwill offer, 5% lol. also says "shake hands" on 90 days notice
+[2024-12-03 17:04] sofia.brennan: lol no. 17.2 - needs to be signed writing, emails & verbal dont count. ignore that
+[2024-12-03 17:05] marcus.hale: ok. but what's actual notice if we just wanna leave? reg says 120d
+[2024-12-03 17:07] sofia.brennan: register is stale!! A2 put it back to 180 and ALSO you cant give notice that expires before end of initial term (31 mar 2027 now)
+[2024-12-03 17:07] sofia.brennan: so convenience exit basically = not before 31/3/27
+[2024-12-03 17:09] marcus.hale: wow ok. so we're locked in till 2027 unless CSF?
+[2024-12-03 17:10] sofia.brennan: yes. sep 99.31 oct 99.42 nov 99.12 -> all <99.5 -> 3 consecutive = CSF per sched 2 para 4(b). draft memo going to tomas today
+[2024-12-03 17:12] marcus.hale: whens the aware date tho - 90 day clock
+[2024-12-03 17:13] sofia.brennan: conservative = today 3 dec bc we have their dashboard numbers. so 3 march 25 latest
+[2024-12-03 17:14] ritu.shah: fyi finance already accrued the nov credit at 2325 based on lise's email - will true up
+[2024-12-03 17:15] sofia.brennan: pls reverse, we are NOT accepting goodwill as full & final. 10% x 46,500 = 4,650
+[2024-12-03 17:16] ritu.shah: ok will do. which fee tho? total monthly is 78,200 right
+[2024-12-03 17:17] sofia.brennan: credits calc on hosting fee only (sched 2 para 3). 46.5k
+[2024-12-04 09:30] marcus.hale: board paper due today?? tomas wants max 2 pages
+[2024-12-04 09:31] sofia.brennan: on it. dont forward the memo to anyone outside legal btw - privileged
+[2024-12-05 11:20] ritu.shah: random q - liability cap now is 150% right? someone said 100 on the call
+[2024-12-05 11:22] sofia.brennan: 150% since A1 (1 Jul 23). A2 didnt touch it, only added the 2.5m / 200% supercap for data protection claims

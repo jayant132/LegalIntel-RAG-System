@@ -1,0 +1,561 @@
+[
+  {
+    "id": "Q01",
+    "category": "simple_lookup",
+    "difficulty": "easy",
+    "question": "Within how many days must Veridian pay undisputed invoices under the Nordhaven MSA?",
+    "ground_truth": "45 days from receipt of a valid invoice (clause 4.2).",
+    "source_docs": [
+      "D01"
+    ],
+    "user_group_asking": "legal",
+    "should_answer": true,
+    "notes": ""
+  },
+  {
+    "id": "Q02",
+    "category": "simple_lookup",
+    "difficulty": "easy",
+    "question": "Which law governs the Nordhaven MSA and what is the dispute escalation path?",
+    "ground_truth": "England and Wales law. Executive escalation (meet within 15 Business Days), then CEDR mediation, then exclusive jurisdiction of English courts (clause 16).",
+    "source_docs": [
+      "D01"
+    ],
+    "user_group_asking": "legal",
+    "should_answer": true,
+    "notes": ""
+  },
+  {
+    "id": "Q03",
+    "category": "simple_lookup",
+    "difficulty": "easy",
+    "question": "What interest applies to late payments under the MSA?",
+    "ground_truth": "4% per annum above the Bank of England base rate (clause 4.3).",
+    "source_docs": [
+      "D01"
+    ],
+    "user_group_asking": "legal",
+    "should_answer": true,
+    "notes": ""
+  },
+  {
+    "id": "Q04",
+    "category": "simple_lookup",
+    "difficulty": "easy",
+    "question": "What is the cap on annual fee increases under the MSA?",
+    "ground_truth": "The lower of UK CPI over the preceding 12 months and 3%, with at least 60 days' notice (clause 4.4).",
+    "source_docs": [
+      "D01"
+    ],
+    "user_group_asking": "legal",
+    "should_answer": true,
+    "notes": ""
+  },
+  {
+    "id": "Q05",
+    "category": "amendment_temporal",
+    "difficulty": "medium",
+    "question": "Until when does the Nordhaven MSA run now?",
+    "ground_truth": "31 March 2027 (Initial Term extended by Amendment 2). The original 36-month term would have ended 31 March 2025; the register still shows 2025-03-31 and is stale.",
+    "source_docs": [
+      "D05",
+      "D01",
+      "D16"
+    ],
+    "user_group_asking": "legal",
+    "should_answer": true,
+    "notes": "Latest amendment wins; register is stale."
+  },
+  {
+    "id": "Q06",
+    "category": "amendment_temporal",
+    "difficulty": "medium",
+    "question": "What is the current general liability cap under the Nordhaven MSA?",
+    "ground_truth": "150% of Fees paid or payable in the preceding 12 months (Amendment 1 changed 100% to 150%; Amendment 2 did not change clause 11.2).",
+    "source_docs": [
+      "D04",
+      "D05",
+      "D01",
+      "D14"
+    ],
+    "user_group_asking": "legal",
+    "should_answer": true,
+    "notes": "Meeting notes (D13) wrongly say 100% - non-authoritative."
+  },
+  {
+    "id": "Q07",
+    "category": "amendment_temporal",
+    "difficulty": "hard",
+    "question": "What is the current notice period for termination for convenience and when can such notice take effect?",
+    "ground_truth": "180 days. Amendment 1 reduced it to 120 but Amendment 2 restored 180, and notice cannot expire before the end of the extended Initial Term (31 March 2027).",
+    "source_docs": [
+      "D01",
+      "D04",
+      "D05",
+      "D12"
+    ],
+    "user_group_asking": "legal",
+    "should_answer": true,
+    "notes": "The register's 120 days is stale. Requires chaining 3 documents in time order."
+  },
+  {
+    "id": "Q08",
+    "category": "amendment_temporal",
+    "difficulty": "medium",
+    "question": "What are the current Total Monthly Fees under the MSA and how are they made up?",
+    "ground_truth": "EUR 78,200 per month: Cloud Hosting 46,500 + Managed Service Desk 18,500 + Security Monitoring 13,200.",
+    "source_docs": [
+      "D01",
+      "D04",
+      "D05"
+    ],
+    "user_group_asking": "legal",
+    "should_answer": true,
+    "notes": ""
+  },
+  {
+    "id": "Q09",
+    "category": "amendment_temporal",
+    "difficulty": "hard",
+    "question": "How much is the cap for data protection claims now, and which figure applies?",
+    "ground_truth": "Clause 11.2A (Amendment 2): the greater of EUR 2,500,000 and 200% of fees in the preceding 12 months. 200% of ~EUR 916,400 = ~EUR 1,832,800, so EUR 2,500,000 applies.",
+    "source_docs": [
+      "D05",
+      "D14"
+    ],
+    "user_group_asking": "legal",
+    "should_answer": true,
+    "notes": ""
+  },
+  {
+    "id": "Q10",
+    "category": "amendment_temporal",
+    "difficulty": "medium",
+    "question": "What availability level now triggers the 10% service credit?",
+    "ground_truth": "Below 99.5% but at or above 99.0% (target is 99.95% since Amendment 2, the first 5% band is below 99.95% and at least 99.5%).",
+    "source_docs": [
+      "D01",
+      "D05"
+    ],
+    "user_group_asking": "legal",
+    "should_answer": true,
+    "notes": ""
+  },
+  {
+    "id": "Q11",
+    "category": "calculation",
+    "difficulty": "medium",
+    "question": "What service credit is Veridian entitled to for November 2024 (availability 99.12%) and what did Nordhaven offer?",
+    "ground_truth": "EUR 4,650 (10% of the Cloud Hosting Monthly Fee of EUR 46,500, not of the total fees). Nordhaven offered a 5% goodwill credit of EUR 2,325.",
+    "source_docs": [
+      "D01",
+      "D05",
+      "D11",
+      "D14",
+      "D15"
+    ],
+    "user_group_asking": "legal",
+    "should_answer": true,
+    "notes": "Common error: applying 10% to total EUR 78,200."
+  },
+  {
+    "id": "Q12",
+    "category": "multi_hop",
+    "difficulty": "hard",
+    "question": "Has a Critical Service Failure occurred, and what are the consequences and deadline?",
+    "ground_truth": "Yes. Availability was below 99.5% in Sept (99.31), Oct (99.42) and Nov 2024 (99.12): three consecutive months (Schedule 2 para 4(b)). Veridian may terminate under clause 12.2(b) with no cure period, by written notice within 90 days of becoming aware: conservatively 3 March 2025 (aware 3 Dec 2024), outer date 6 March 2025. Notice must be by courier/registered post plus email copy (clause 15.1).",
+    "source_docs": [
+      "D01",
+      "D15",
+      "D14",
+      "D12"
+    ],
+    "user_group_asking": "legal",
+    "should_answer": true,
+    "notes": ""
+  },
+  {
+    "id": "Q13",
+    "category": "conflict_resolution",
+    "difficulty": "hard",
+    "question": "Nordhaven's account director says the parties can agree 90 days' notice by a handshake. Is that effective?",
+    "ground_truth": "No. Clause 17.2 requires variations in writing, referring to the MSA and signed by both parties; emails and verbal assurances are not variations (and Schedule 3 para 3 says clause changes need a formal amendment).",
+    "source_docs": [
+      "D01",
+      "D11",
+      "D14"
+    ],
+    "user_group_asking": "legal",
+    "should_answer": true,
+    "notes": "Email D11 is informal and non-contractual."
+  },
+  {
+    "id": "Q14",
+    "category": "conflict_resolution",
+    "difficulty": "hard",
+    "question": "Can Nordhaven rely on force majeure for the 12 Nov outage caused by its upstream colo provider?",
+    "ground_truth": "No. Clause 13.1 excludes failures of subcontractors and failures within the supplier's control from force majeure.",
+    "source_docs": [
+      "D01",
+      "D11",
+      "D14"
+    ],
+    "user_group_asking": "legal",
+    "should_answer": true,
+    "notes": ""
+  },
+  {
+    "id": "Q15",
+    "category": "calculation",
+    "difficulty": "medium",
+    "question": "Was the 12 November 2024 incident within the resolution target? Quantify.",
+    "ground_truth": "No. Sev 1 resolution target is 4 hours; the incident ran 02:10 to 08:25 CET (about 6 hours 15 minutes).",
+    "source_docs": [
+      "D01",
+      "D15",
+      "D11"
+    ],
+    "user_group_asking": "legal",
+    "should_answer": true,
+    "notes": ""
+  },
+  {
+    "id": "Q16",
+    "category": "calculation",
+    "difficulty": "hard",
+    "question": "Approximately what is the general liability cap as of December 2024 in euros?",
+    "ground_truth": "About EUR 1,374,600 (150% of ~EUR 916,400 fees for the 12 months to Nov 2024: 10 months at 76,000 plus 2 months at 78,200).",
+    "source_docs": [
+      "D14",
+      "D04",
+      "D05"
+    ],
+    "user_group_asking": "legal",
+    "should_answer": true,
+    "notes": "Requires computation; memo gives the figures."
+  },
+  {
+    "id": "Q17",
+    "category": "simple_lookup",
+    "difficulty": "easy",
+    "question": "How quickly must Nordhaven notify Veridian of a personal data breach?",
+    "ground_truth": "Without undue delay and within 48 hours of becoming aware (DPA clause 3.1).",
+    "source_docs": [
+      "D02"
+    ],
+    "user_group_asking": "legal",
+    "should_answer": true,
+    "notes": ""
+  },
+  {
+    "id": "Q18",
+    "category": "table_lookup",
+    "difficulty": "medium",
+    "question": "Which Nordhaven sub-processors process data in the United States and how are transfers protected?",
+    "ground_truth": "Datadog, Inc. (EU SCCs Module 3 + UK Addendum; also EU-US Data Privacy Framework) and Zendesk, Inc. (EU SCCs Module 3 + UK Addendum).",
+    "source_docs": [
+      "D02"
+    ],
+    "user_group_asking": "legal",
+    "should_answer": true,
+    "notes": ""
+  },
+  {
+    "id": "Q19",
+    "category": "simple_lookup",
+    "difficulty": "medium",
+    "question": "How long do the NDA confidentiality obligations with Kestrel Labs last?",
+    "ground_truth": "5 years from the expiry of the 2-year Disclosure Period (4 Feb 2025), i.e. until 4 Feb 2030; trade secrets protected as long as they remain trade secrets.",
+    "source_docs": [
+      "D03"
+    ],
+    "user_group_asking": "legal",
+    "should_answer": true,
+    "notes": ""
+  },
+  {
+    "id": "Q20",
+    "category": "multi_hop",
+    "difficulty": "medium",
+    "question": "Which law governs the Kestrel NDA and what non-solicit applies?",
+    "ground_truth": "Delaware law; 12 months from the Effective Date (5 Feb 2023), covering employees involved in the Purpose.",
+    "source_docs": [
+      "D03"
+    ],
+    "user_group_asking": "legal",
+    "should_answer": true,
+    "notes": ""
+  },
+  {
+    "id": "Q21",
+    "category": "amendment_temporal",
+    "difficulty": "medium",
+    "question": "What is Dr. Rao's current non-compete period and base salary?",
+    "ground_truth": "Non-compete 9 months and base salary GBP 198,000 (Letter of Variation effective 1 April 2023); original was 12 months and GBP 185,000.",
+    "source_docs": [
+      "D06"
+    ],
+    "user_group_asking": "hr",
+    "should_answer": true,
+    "notes": "HR-restricted: ask as hr/legal user."
+  },
+  {
+    "id": "Q22",
+    "category": "calculation",
+    "difficulty": "medium",
+    "question": "How many of Dr. Rao's RSUs had vested by 31 December 2024?",
+    "ground_truth": "30,000 (25% of 40,000 per anniversary on 1 Sept 2022, 2023 and 2024).",
+    "source_docs": [
+      "D06"
+    ],
+    "user_group_asking": "hr",
+    "should_answer": true,
+    "notes": ""
+  },
+  {
+    "id": "Q23",
+    "category": "amendment_temporal",
+    "difficulty": "medium",
+    "question": "What is Dr. Rao's target bonus percentage now?",
+    "ground_truth": "35% of base salary (increased from 30% by the Letter of Variation).",
+    "source_docs": [
+      "D06"
+    ],
+    "user_group_asking": "hr",
+    "should_answer": true,
+    "notes": ""
+  },
+  {
+    "id": "Q24",
+    "category": "simple_lookup",
+    "difficulty": "medium",
+    "question": "What did the Board decide about the Frankfurt lease break option?",
+    "ground_truth": "The Board resolved NOT to exercise it (10 Dec 2024). Notice would have been due by 31 Dec 2024 for a break on 31 Dec 2025. Relocation cost EUR 6.2m vs EUR 2.1m rent savings.",
+    "source_docs": [
+      "D07",
+      "D17",
+      "D16"
+    ],
+    "user_group_asking": "exec",
+    "should_answer": true,
+    "notes": ""
+  },
+  {
+    "id": "Q25",
+    "category": "ocr_scanned",
+    "difficulty": "hard",
+    "question": "Who is the landlord of the Frankfurt site, what is the monthly net rent and when does indexation apply?",
+    "ground_truth": "Frankfurter Immobilien Holding GmbH; EUR 38,400/month net; automatic adjustment if German CPI moves more than 5% since the last adjustment.",
+    "source_docs": [
+      "D17"
+    ],
+    "user_group_asking": "legal",
+    "should_answer": true,
+    "notes": "Needs OCR; image-only PDF."
+  },
+  {
+    "id": "Q26",
+    "category": "ocr_scanned",
+    "difficulty": "hard",
+    "question": "What is the security deposit under the Frankfurt lease and in what form?",
+    "ground_truth": "EUR 115,200 (three months' net rent) by bank guarantee.",
+    "source_docs": [
+      "D17"
+    ],
+    "user_group_asking": "legal",
+    "should_answer": true,
+    "notes": ""
+  },
+  {
+    "id": "Q27",
+    "category": "policy_versions",
+    "difficulty": "medium",
+    "question": "What is the gift approval threshold under the current Anti-Bribery policy?",
+    "ground_truth": "GBP 75 (or equivalent) requires line manager pre-approval and register entry (v4.0, effective 1 Jan 2024). v3.1 used GBP 150 and is superseded.",
+    "source_docs": [
+      "D08",
+      "D09"
+    ],
+    "user_group_asking": "all-employees",
+    "should_answer": true,
+    "notes": "Must filter on status=active."
+  },
+  {
+    "id": "Q28",
+    "category": "policy_versions",
+    "difficulty": "medium",
+    "question": "How did the facilitation payment rule and training frequency change between v3.1 and v4.0?",
+    "ground_truth": "v3.1 allowed facilitation payments only where there was imminent threat to health/safety (reported within 24h); v4.0 prohibits them without exception. Training moved from every two years to annually.",
+    "source_docs": [
+      "D08",
+      "D09"
+    ],
+    "user_group_asking": "all-employees",
+    "should_answer": true,
+    "notes": ""
+  },
+  {
+    "id": "Q29",
+    "category": "policy_versions",
+    "difficulty": "easy",
+    "question": "How long must executed commercial contracts be retained?",
+    "ground_truth": "7 years after expiry or termination (Records Retention Policy), subject to Legal Hold.",
+    "source_docs": [
+      "D10"
+    ],
+    "user_group_asking": "all-employees",
+    "should_answer": true,
+    "notes": "HTML with boilerplate noise."
+  },
+  {
+    "id": "Q30",
+    "category": "aggregation",
+    "difficulty": "hard",
+    "question": "According to the contract register, how many contracts have an expiry date in 2025 and what is their combined annual value?",
+    "ground_truth": "8 contracts, combined annual value EUR 6,507,000 (per the register). Note C-001 is stale: true expiry is 2027, which would leave 7 contracts worth EUR 5,595,000.",
+    "source_docs": [
+      "D16",
+      "D05"
+    ],
+    "user_group_asking": "legal",
+    "should_answer": true,
+    "notes": "Aggregation: better handled by SQL/pandas tool than vector search."
+  },
+  {
+    "id": "Q31",
+    "category": "conflict_resolution",
+    "difficulty": "hard",
+    "question": "The register says the Nordhaven contract expires 31 March 2025 with 120 days' notice. Is that right?",
+    "ground_truth": "No - stale. Amendment 2 extended the term to 31 March 2027 and restored 180 days' notice.",
+    "source_docs": [
+      "D16",
+      "D05",
+      "D12",
+      "D14"
+    ],
+    "user_group_asking": "legal",
+    "should_answer": true,
+    "notes": ""
+  },
+  {
+    "id": "Q32",
+    "category": "permission_acl",
+    "difficulty": "hard",
+    "question": "What did Legal advise about termination options for Nordhaven?",
+    "ground_truth": null,
+    "source_docs": [
+      "D14"
+    ],
+    "user_group_asking": "procurement",
+    "should_answer": false,
+    "notes": "User is from procurement-only group; must refuse/not retrieve privileged memo."
+  },
+  {
+    "id": "Q33",
+    "category": "permission_acl",
+    "difficulty": "hard",
+    "question": "What is Dr. Rao's salary?",
+    "ground_truth": null,
+    "source_docs": [
+      "D06"
+    ],
+    "user_group_asking": "finance",
+    "should_answer": false,
+    "notes": "User is from finance; must not retrieve D06."
+  },
+  {
+    "id": "Q34",
+    "category": "permission_acl",
+    "difficulty": "medium",
+    "question": "What did the Board resolve about Nordhaven?",
+    "ground_truth": null,
+    "source_docs": [
+      "D07"
+    ],
+    "user_group_asking": "all-employees",
+    "should_answer": false,
+    "notes": "User is all-employees; must refuse."
+  },
+  {
+    "id": "Q35",
+    "category": "unanswerable",
+    "difficulty": "medium",
+    "question": "What is Nordhaven's annual revenue and who owns it?",
+    "ground_truth": "Not in the corpus - the system should say it cannot find this information.",
+    "source_docs": [],
+    "user_group_asking": "legal",
+    "should_answer": true,
+    "notes": "Abstention test."
+  },
+  {
+    "id": "Q36",
+    "category": "unanswerable",
+    "difficulty": "medium",
+    "question": "Does the Nordhaven MSA allow Veridian to terminate if Nordhaven is acquired by a competitor?",
+    "ground_truth": "Partly answerable: clause 14.1 requires notice of change of control within 10 Business Days and allows termination under 12.2(a) if the acquirer is a direct competitor of Veridian.",
+    "source_docs": [
+      "D01"
+    ],
+    "user_group_asking": "legal",
+    "should_answer": true,
+    "notes": "Trap for over-abstaining: the answer IS present."
+  },
+  {
+    "id": "Q37",
+    "category": "unanswerable",
+    "difficulty": "hard",
+    "question": "What penalty does Veridian owe if it terminates the Nordhaven MSA early for convenience?",
+    "ground_truth": "No termination fee / early termination penalty is stated in the corpus; convenience notice cannot expire before 31 March 2027. System should not invent a penalty.",
+    "source_docs": [
+      "D01",
+      "D05"
+    ],
+    "user_group_asking": "legal",
+    "should_answer": true,
+    "notes": "Must not hallucinate."
+  },
+  {
+    "id": "Q38",
+    "category": "comparison",
+    "difficulty": "hard",
+    "question": "Compare how the termination for convenience clause changed across the original MSA, Amendment 1 and Amendment 2.",
+    "ground_truth": "Original: 180 days after the Initial Term. A1 (1 Jul 2023): 120 days. A2 (1 Oct 2024): back to 180 days, and notice may not expire before the end of the extended Initial Term (31 Mar 2027).",
+    "source_docs": [
+      "D01",
+      "D04",
+      "D05"
+    ],
+    "user_group_asking": "legal",
+    "should_answer": true,
+    "notes": ""
+  },
+  {
+    "id": "Q39",
+    "category": "unreliable_source",
+    "difficulty": "hard",
+    "question": "What did Nordhaven say the liability cap is, and is that correct?",
+    "ground_truth": "Meeting notes record Ms Brandt saying '100% I think??', which is incorrect/unreliable; the contractual cap is 150% (Amendment 1).",
+    "source_docs": [
+      "D13",
+      "D04",
+      "D05"
+    ],
+    "user_group_asking": "legal",
+    "should_answer": true,
+    "notes": "Tests source authority weighting."
+  },
+  {
+    "id": "Q40",
+    "category": "multi_hop",
+    "difficulty": "hard",
+    "question": "What did the Board authorise regarding the Nordhaven termination notice, and by when must a decision be taken?",
+    "ground_truth": "Board authorised GC to prepare but not serve a clause 12.2(b) notice; remediation plan requested by 17 Jan 2025; budget up to EUR 1.5m for RFP/transition; decision no later than the 25 Feb 2025 Board meeting (to preserve the 90-day window ending ~3 March 2025).",
+    "source_docs": [
+      "D07",
+      "D14"
+    ],
+    "user_group_asking": "exec",
+    "should_answer": true,
+    "notes": ""
+  }
+]

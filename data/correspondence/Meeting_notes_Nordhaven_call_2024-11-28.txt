@@ -1,0 +1,14 @@
+Call w/ Nordhaven - 28 Nov 2024 - notes (MH)  [rough, typed on train]
+
+Attendees: Lise B, Soren L (joined last 10 mins), me, Ritu
+- Went thru RCA draft. They admit root cause = colo power + bad healthcheck config
+- Lise says "avail for Nov prob ~99.1 something". Credits "will be sorted"
+- Soren: wants to "reset the relationship", offered free security workshop (value ~ EUR 8k??)
+- Lise mentioned liability cap is 100% I think?? check
+- Lise: they'd be "flexible on notice" if we want to move away. NOT in writing. no numbers discussed (she said 90 days in the follow up email)
+- they asked whether we are "thinking about CSF". I said no comment
+- Ask them: remediation plan, new health check test results, DR test evidence
+- TODO me: tell Tomas. send RCA to infosec.
+- Soren to call Helena (COO) next week - no date
+
+Nordhaven FYI new Prague SOC team started Oct, thats the s.r.o. in DPA annex.

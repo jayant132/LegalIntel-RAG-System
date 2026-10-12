@@ -1,0 +1,62 @@
+From: Lise Brandt <lise.brandt@nordhaven.example>
+To: Marcus Hale <marcus.hale@veridian-global.example>
+Cc: Soren Lindqvist <soren.lindqvist@nordhaven.example>; Tomas Vidal <tomas.vidal@veridian-global.example>
+Date: Tue, 3 Dec 2024 16:41:07 +0100
+Subject: RE: RE: FW: Nov 12 outage - credits & next steps
+
+Hi Marcus,
+
+Thanks for your patience, and sorry again for the stress this has caused you and the team.
+
+On credits - our finance people looked at the numbers. Nov avail came out at 99.12% on our dashboard so we ARE below the threshold, no argument there. We'd like to offer a 5% goodwill credit on the hosting line (thats EUR 2,325) given the root cause was our upstream colo provider in Dublin and not our own kit. We see this as a force majeure type situation really so this is generous.
+
+Also - just to say what I told you on the call on the 28th - if Veridian wants to wind things down early, Soren and I are relaxed about the notice. We can shake hands on 90 days instead of the 180, no need for lawyers to get involved. Let's keep it simple!
+
+Happy to jump on a call tomorrow.
+
+Best,
+Lise
+
+Lise Brandt | Senior Account Director | Nordhaven Cloud Solutions A/S
+Havnegade 12, 1058 Copenhagen K | +45 33 00 11 22
+This e-mail may contain confidential information. If you are not the intended recipient please delete it.
+
+-----Original Message-----
+From: Marcus Hale <marcus.hale@veridian-global.example>
+Sent: Monday, December 02, 2024 9:15 AM
+To: Lise Brandt
+Cc: Tomas Vidal
+Subject: RE: FW: Nov 12 outage - credits & next steps
+
+Lise,
+
+Thanks for the incident report (RCA v2). Few things:
+
+1. The outage started 02:10 CET on 12 Nov and service wasnt fully restored til 08:25. Thats over 6 hours for a Sev 1. Our contract says 4 hours resolution for Sev1.
+2. Per the SLA table Nov availability of 99.12% puts you in the 10% band, which is 10% of the Cloud Hosting monthly fee. I make that EUR 4,650. Please confirm.
+3. Re: the Dublin colo - as far as I can see the MSA says subcontractor failures aren't force majeure (13.1) so I dont think we can accept that framing.
+4. Separately Sept and Oct were also under 99.5 (99.31 and 99.42). I've asked Legal to look at what that means. Not making any statement on it for now.
+
+Marcus
+
+Marcus Hale
+Head of Procurement, Veridian Global Industries plc
+Mobile: +44 7700 900123
+
+> -----Original Message-----
+> From: Lise Brandt
+> Sent: Friday, November 15, 2024 11:02
+> To: Marcus Hale
+> Subject: FW: Nov 12 outage
+>
+> Hi Marcus, forwarding the initial note from our NOC. Root cause = power failure at upstream colo
+> (Dublin DC2) which cascaded to our primary cluster, failover took longer than expected b/c of a
+> misconfigured health check. Full RCA to follow. Pls treat as prelim. Lise
+>
+>> From: NOC Duty Manager
+>> Subject: SEV1 - eu-west cluster degraded
+>> 02:10 CET alert fired. 02:18 bridge opened. 04:50 failover attempted - FAILED (hc timeout).
+>> 06:40 manual reroute. 08:25 all services green. Customer comms sent 02:45.
+
+---
+Sent from my iPhone  (pls excuse typos)
