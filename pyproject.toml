@@ -54,4 +54,5 @@ addopts = "-q"
 [dependency-groups]
 dev = [
     "pre-commit>=4.6.2",
+    "types-openpyxl>=3.1.5.20260827",
 ]
