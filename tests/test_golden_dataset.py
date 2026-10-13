@@ -18,7 +18,7 @@ GOLDEN = load_golden(DATA / "eval" / "golden_questions.json")
 
 # Known defects: asked by 'exec', but cited sources include documents exec may not read.
 # strict xfail => once you fix the data, the test fails and tells you to delete the id here.
-KNOWN_ACL_INCONSISTENT = {"Q24", "Q40"}
+KNOWN_ACL_INCONSISTENT: set[str] = set()
 
 
 def test_golden_has_40_unique_questions() -> None:

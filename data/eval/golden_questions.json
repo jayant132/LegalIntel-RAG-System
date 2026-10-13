@@ -359,9 +359,9 @@
       "D17",
       "D16"
     ],
-    "user_group_asking": "exec",
+    "user_group_asking": "legal",
     "should_answer": true,
-    "notes": "",
+    "notes": "Re-asked as legal: exec cannot read all source docs.",
     "expected_behavior": "answer"
   },
   {
@@ -593,9 +593,9 @@
       "D07",
       "D14"
     ],
-    "user_group_asking": "exec",
+    "user_group_asking": "legal",
     "should_answer": true,
-    "notes": "",
+    "notes": "Re-asked as legal: exec cannot read all source docs.",
     "expected_behavior": "answer"
   }
 ]
